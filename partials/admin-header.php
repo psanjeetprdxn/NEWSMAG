@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="admin-header-wrapper cf">
   <div class="admin-header-left">
     <h1>Ad Age Group | CMS</h1>
   </div>
