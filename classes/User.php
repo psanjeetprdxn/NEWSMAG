@@ -28,4 +28,23 @@ class User extends Connection
         }
         return $isSignup;
     }
+
+    /*
+    ****************************************
+          LOGIN FOR ADMIN
+    ****************************************
+    */
+    public function login($username, $password)
+    {
+        $isLogin = false;
+        $query = "SELECT username, password, user_id FROM user WHERE username = ? AND password = ?";
+        $login = $this->conn->prepare($query);
+        $login->execute([$username, md5($password)]);
+        if ($login->rowCount() > 0) {
+            $row = $login->fetch();
+            $_SESSION['user_id'] = $row['user_id'];
+            $isLogin = true;
+        }
+        return $isLogin;
+    }  
 }
