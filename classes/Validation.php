@@ -60,5 +60,19 @@ class Validation extends Connection {
             $isValid = true;
         }
         return $isValid;
-    }    
+    }
+
+    /*
+    ***********************************************
+       CHECKS IF EMAIL IS (EMPTY & VALID) OR NOT
+    ***********************************************
+    */
+    public function validateEmail($email)
+    {
+        $isValid = false;
+        if (!empty(filter_var($this->sanitize($email), FILTER_VALIDATE_EMAIL))) {
+            $isValid = true;
+        }
+        return $isValid;
+    }     
 }
