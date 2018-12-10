@@ -1,6 +1,8 @@
 <div class="admin-header-wrapper cf">
   <div class="admin-header-left">
-    <h1>Ad Age Group | CMS</h1>
+    <h1>
+      <a href="index.php" title="Ad Age CMS">Ad Age Group | CMS</a>
+    </h1>
   </div>
   <ul>
     <li>
