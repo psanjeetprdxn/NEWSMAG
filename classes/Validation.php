@@ -27,7 +27,7 @@ class Validation extends Connection {
     public function validateUsername($username)
     {
         $isValid = false;
-        if (!empty(preg_match('/^[A-Za-z][A-Za-z0-9]{5,31}$/', $this->sanitize($username))) {
+        if (!empty(preg_match('/^[A-Za-z][A-Za-z0-9]{5,31}$/', $this->sanitize($username)))) {
             $isValid = true;
         }
         return $isValid;
@@ -91,5 +91,5 @@ class Validation extends Connection {
             $isUsernameExists = true;
         }
         return $isUsernameExists;
-    }   
+    }
 }
