@@ -32,4 +32,18 @@ class Validation extends Connection {
         }
         return $isValid;
     }
+
+    /*
+    ****************************************
+       CHECKS IF PASSWORD IS VALID
+    ****************************************
+    */
+    public function validatePassword($password)
+    {
+        $isValid = false;
+        if (!empty($this->sanitize($password))) {
+            $isValid = true;
+        }
+        return $isValid;
+    }    
 }
