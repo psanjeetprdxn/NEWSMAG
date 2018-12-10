@@ -46,5 +46,22 @@ class User extends Connection
             $isLogin = true;
         }
         return $isLogin;
+    }
+
+    /*
+    *******************************************
+          RETURNS NAME OF PARTICULAR USERS
+    *******************************************
+    */
+    public function getNameById($user_id) {
+        $name = "";
+        $query = "SELECT name FROM user WHERE user_id = ?";
+        $getName = $this->conn->prepare($query);
+        $getName->execute([$user_id]);
+        if ($getName->rowCount() > 0 ) {
+            $row = $getName->fetch();
+            $name = $row['name'];
+        }
+        return $name;
     }  
 }
