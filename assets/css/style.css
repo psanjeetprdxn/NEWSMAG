@@ -211,3 +211,47 @@ aside h2 {
 
 aside nav li { margin-top: 13px; }
 aside nav a:hover { color: #a3a4a7; }
+
+/* forms styling start here (login and signup)*/
+
+.register-form {
+  width: 356px;
+  padding: 31px 27px 24px;
+  border: 2px solid #eaeaea;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.register-form h2 {
+  color: #393939;
+  font-size: 31px;
+  font-weight: 900;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 8px 0 8px 8px;
+  border: 2px solid #e5e5e5;
+  margin-top: 14px;
+  border-radius: 4px;
+  color: #a5abae;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-button {
+  margin-top: 14px;
+  display: inline-block;
+}
+
+.form-button input[type=submit],
+.form-button a {
+  padding: 4px 4px 4px;
+  border: 2px solid #ececec;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  color: #6e6e6e;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
