@@ -45,5 +45,20 @@ class Validation extends Connection {
             $isValid = true;
         }
         return $isValid;
+    }
+
+    /*
+    ****************************************
+         CHECKS IF NAME IS VALID
+    ****************************************
+    */
+    public function validateName($name)
+    {
+        $isValid = false;
+        $name = $this->sanitize($name);
+        if (!empty(preg_match("/^([a-zA-Z' ]+)$/", $this->sanitize($name)))) {
+            $isValid = true;
+        }
+        return $isValid;
     }    
 }
