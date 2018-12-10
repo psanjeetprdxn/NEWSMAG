@@ -74,5 +74,22 @@ class Validation extends Connection {
             $isValid = true;
         }
         return $isValid;
-    }     
+    }
+
+    /*
+    *****************************************
+      CHECKS IF USERNAME ALREADY EXISTS
+    *****************************************
+    */
+    public function isUsernameExists($username)
+    {
+        $isUsernameExists = false;
+        $query = "SELECT username FROM user WHERE username = ?";
+        $fetchUsername = $this->conn->prepare($query);
+        $fetchUsername->execute([$username]);
+        if ($fetchUsername->rowCount() > 0) {
+            $isUsernameExists = true;
+        }
+        return $isUsernameExists;
+    }   
 }
