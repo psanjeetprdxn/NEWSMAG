@@ -4,16 +4,16 @@
   </div>
   <ul>
     <li>
-      <a href="signup.php" class="transition" title="Sign Up">Sign Up</a>
+      <a href="signup.php" class="transition first-letter" title="Sign Up">sign up</a>
     </li>
     <li>
-      <a href="login.php" class="transition" title="Login">Login</a>
+      <a href="login.php" class="transition first-letter" title="Login">login</a>
     </li>
     <li>
-      <a href="#FIXME" class="profile-name transition" title="Sign Up">Libby Swan</a>
+      <a href="#FIXME" class="profile-name transition first-letter" title="Sign Up">libby swan</a>
     </li>
     <li>
-      <a href="logout.inc.php" class="transition" title="Logout">Logout</a>
+      <a href="logout.inc.php" class="transition first-letter" title="Logout">logout</a>
     </li>
   </ul>
 </div>
