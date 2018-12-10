@@ -7,7 +7,7 @@
       <a href="signup.php" class="transition first-letter" title="Sign Up">sign up</a>
     </li>
     <li>
-      <a href="login.php" class="transition first-letter" title="Login">login</a>
+      <a href="login.php" class="transition first-letter" title="Login">log in</a>
     </li>
     <li>
       <a href="#FIXME" class="profile-name transition first-letter" title="Sign Up">libby swan</a>
