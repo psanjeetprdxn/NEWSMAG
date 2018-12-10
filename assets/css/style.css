@@ -179,3 +179,35 @@ header {
   font-weight: 500;
   letter-spacing: .2px;
 }
+
+
+/* ASIDE MENU */
+.main-content { padding: 20px 0 20px; }
+
+.main-content .wrapper {
+  width: 96.89%;
+  margin: 0 auto;
+}
+
+.main-content aside {
+  width: 14.37%;
+  padding: 16px 0 16px 14px;
+  border: 1px solid #d8d8d8;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+
+aside h2,
+aside a {
+  color: #4aaba6;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+aside h2 {
+  padding-bottom: 6px;
+  color: #a3a4a7;
+}
+
+aside nav li { margin-top: 13px; }
+aside nav a:hover { color: #a3a4a7; }
