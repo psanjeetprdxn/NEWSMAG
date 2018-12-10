@@ -82,3 +82,45 @@
 .cf:after { clear: both; }
 
 .cf { *zoom: 1; }
+
+/* COMMON STYLING */
+
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+.container { width: 100%; }
+
+.wrapper {
+  width: 71.85%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+ .fas { padding-right: 5px; }
+ body { font-family: Arial; }
+ ul li { list-style: none; }
+ img { width: 100%; }
+ .uppercase { text-transform: uppercase; }
+ .first-letter:first-letter { text-transform: capitalize; }
+ .block { display: block; }
+ .centre { text-align: center; }
+ .capitalize { text-transform: capitalize; }
+
+.transition {
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -ms-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
