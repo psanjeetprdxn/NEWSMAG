@@ -166,3 +166,16 @@ header {
   color: #f8f8f8;
   background-color: #292929;
 }
+
+/* footer */
+.admin-footer-wrapper {
+  width: 96.89%;
+  margin: 0 auto;
+}
+
+.admin-footer-wrapper p {
+  color: #707276;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .2px;
+}
