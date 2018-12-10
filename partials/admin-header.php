@@ -6,16 +6,16 @@
   </div>
   <ul>
     <li>
-      <a href="signup.php" class="transition first-letter" title="Sign Up">sign up</a>
+      <a href="signup.php" class="transition capitalize" title="Sign Up">sign up</a>
     </li>
     <li>
-      <a href="login.php" class="transition first-letter" title="Login">log in</a>
+      <a href="login.php" class="transition capitalize" title="Login">log in</a>
     </li>
     <li>
-      <a href="#FIXME" class="profile-name transition first-letter" title="Sign Up">libby swan</a>
+      <a href="#FIXME" class="profile-name transition capitalize" title="Sign Up">libby swan</a>
     </li>
     <li>
-      <a href="logout.inc.php" class="transition first-letter" title="Logout">logout</a>
+      <a href="logout.inc.php" class="transition capitalize" title="Logout">logout</a>
     </li>
   </ul>
 </div>
