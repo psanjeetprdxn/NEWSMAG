@@ -44,4 +44,47 @@ class Article extends Connection
         }
         return $article;
     }
+
+    /*
+    ****************************************
+          UPDATE FOR ARTICLES
+    ****************************************
+    */
+    public function update($title, $description, $section_name, $article_id)
+    {
+        $isUpdated = false;
+        $query = "UPDATE article SET title = ?, description = ?, section_name = ? WHERE article_id = ?";
+        $update = $this->conn->prepare($query);
+        $update->bindParam(1, $title);
+        $update->bindParam(2, $description);
+        $update->bindParam(3, $section_name);
+        $update->bindParam(4, $article_id);
+        $update->execute();
+        if ($update) {
+            $isUpdated = true;
+        }
+        return $isUpdated;
+    }
+
+    /*
+    ****************************************
+          UPDATE FOR ARTICLES
+    ****************************************
+    */
+    public function updateThumbnail($title, $description, $section_name, $thumbnail_image, $article_id)
+    {
+        $isUpdated = false;
+        $query = "UPDATE article SET title = ?, description = ?, section_name = ?, thumbnail_image = ? WHERE article_id = ?";
+        $update = $this->conn->prepare($query);
+        $update->bindParam(1, $title);
+        $update->bindParam(2, $description);
+        $update->bindParam(3, $section_name);
+        $update->bindParam(4, $thumbnail_image, PDO::PARAM_LOB);
+        $update->bindParam(5, $article_id);
+        $update->execute();
+        if ($update) {
+            $isUpdated = true;
+        }
+        return $isUpdated;
+    }
 }
