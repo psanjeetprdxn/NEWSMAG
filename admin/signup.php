@@ -9,11 +9,21 @@
 	<!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- Adding reference to font awesome -->
-	<link rel="stylesheet" href="assets/vendor/font/fontawesome-all.css">
+	<link rel="stylesheet" href="../assets/vendor/font/fontawesome-all.css">
 	<!-- Default style-sheet is for 'media' type screen (color computer display).  -->
 	<link rel="stylesheet" media="screen" href="../assets/css/style.css">
 </head>
 <body>
+  <?php
+  if (!isset($_SESSION)) {
+  		session_start();
+  }
+  // IF SESSION EXISTS THAN REDIRECT TO INDEX PAGE
+  if (isset($_SESSION['user_id'])) {
+    header("Location: index.php");
+    exit();
+  }
+  ?>
 	<div class="container">
 		<!-- Start of the header -->
 		<header>
@@ -27,27 +37,80 @@
 			<!-- admin signup form start here-->
 			<div class="main-content">
 				<div class="wrapper">
-						<div class="register-form">
-							<h2 class="capitalize">please sign up</h2>
-							<form action="<?php echo htmlentities('../includes/signup.inc.php'); ?>" method="post">
-								<div class="form-input">
-									<input type="text" name="name" placeholder="Name">
-									<label class="form-error"></label>
-								</div>
-								<div class="form-input">
-									<input type="text" name="username" placeholder="Username">
-									<label class="form-error"></label>
-								</div>
-								<div class="form-input">
-									<input type="password" name="password" placeholder="Password">
-									<label class="form-error"></label>
-								</div>
-								<div class="form-button">
-									 <input type="submit" class="capitalize transition" name="signup" value="sign up">
-								</div>
-								<label class="form-error"></label>
-							</form>
-						</div>
+					<div class="register-form">
+						<h2 class="capitalize">please sign up</h2>
+						<form action="<?php echo htmlentities('../includes/signup.inc.php'); ?>" method="post">
+							<div class="form-input">
+								<input type="text" name="name" placeholder="Name" value="<?php if (isset($_SESSION['retainFormData'])) { echo $_SESSION['retainFormData']['name']; } ?>">
+								<label class="form-error">
+                  <?php
+                  if (isset($_GET['msg'])) {
+                    	if ($_GET['msg'] == 'nameInvalid') {
+                      		echo 'Must contain letters only';
+                    	}
+                    	if ($_GET['msg'] == 'nameNotSet') {
+                      		echo 'Name attribute is not set';
+                    	}
+                  }
+                  ?>
+                </label>
+							</div>
+							<div class="form-input">
+								<input type="text" name="username" placeholder="Username" value="<?php if (isset($_SESSION['retainFormData'])) { echo $_SESSION['retainFormData']['username']; } ?>">
+								<label class="form-error">
+                  <?php
+                  	if (isset($_GET['msg'])) {
+                    		if ($_GET['msg'] == 'usernameExists') {
+                      			echo 'Username already exists';
+                    		}
+                    		if ($_GET['msg'] == 'usernameInvalid') {
+                      			echo 'Username must contain letters and numbers from 6-32 characters and must start with letters';
+                    		}
+                    		if ($_GET['msg'] == 'usernameNotSet') {
+                      			echo 'Username attribute is not set';
+                    		}
+                  	}
+                  ?>
+                </label>
+							</div>
+							<div class="form-input">
+								<input type="password" name="password" placeholder="Password">
+								<label class="form-error">
+                  <?php
+                  if (isset($_GET['msg'])) {
+                      if ($_GET['msg'] == 'passwordInvalid') {
+                          echo 'Password required';
+                      }
+                      if ($_GET['msg'] == 'passwordNotSet') {
+                          echo 'Password attribute is not set';
+                      }
+                  }
+                  ?>
+                </label>
+							</div>
+							<div class="form-button">
+								 <input type="submit" class="capitalize transition" name="signup" value="sign up">
+							</div>
+							<label class="form-error">
+                <?php
+                if (isset($_GET['msg'])) {
+                  	if ($_GET['msg'] == 'signupFail') {
+                    		echo 'Something went wrong. Please try again.';
+                  	}
+                }
+                ?>
+              </label>
+              <label class="form-success">
+                <?php
+                if (isset($_GET['msg'])) {
+                  	if ($_GET['msg'] == 'signupSucces') {
+                    		echo 'Signup successfully done';
+                  	}
+                }
+                ?>
+              </label>
+						</form>
+					</div>
 				</div>
 			</div>
 			<!-- admin signup form ends here -->
