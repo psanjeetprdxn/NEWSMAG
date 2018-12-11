@@ -20,8 +20,8 @@
   }
   // IF SESSION EXISTS THAN REDIRECT TO INDEX PAGE
   if (isset($_SESSION['user_id'])) {
-    header("Location: index.php");
-    exit();
+    	header("Location: index.php");
+    	exit();
   }
   ?>
 	<div class="container">
