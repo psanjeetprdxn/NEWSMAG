@@ -332,3 +332,87 @@ aside nav a:hover { color: #a3a4a7; }
   font-size: 16px;
   font-weight: 700;
 }
+
+/*main-content add/update article*/
+.add-article {
+  width: 85%;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.add-article > ul > li { float: left; }
+
+.add-article > ul a {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-bottom-color: #ddd;
+  color: #5ea89b;
+}
+
+.add-article > ul a:hover,
+.add-article > ul > li > .active {
+  border: 1px solid #ddd;
+  border-bottom: 1px solid transparent;
+  color: #a4a4a4;
+}
+
+.article-form .fields {
+  margin-top: 20px;
+  display: block;
+}
+
+.article-form .fields .input-label,
+.article-form .fields .input-fields {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-form .fields .input-fields img { width: 78.5%; }
+
+.article-form .input-label {
+  width: 15.40%;
+  color: #3C3C3C;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.article-form .fields .input-fields {
+  width: 83%;
+  padding-left: 1.88%;
+}
+
+.article-form input,
+.article-form textarea,
+.article-form select {
+  width: 78.64%;
+  padding: 8px 0 8px 5px;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  outline: none;
+}
+
+.article-form textarea {
+  padding: 6px 0 66px 5px;
+  resize: none;
+}
+
+.article-form input[type=file] { margin-top: 5px; }
+
+.article-form input[type=submit] {
+  width: 100%;
+  padding: 4px 10px 4px;
+  border: 2px solid #ececec;
+  background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
+  border-radius: 4px;
+  color: #6e6e6e;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
+
+.article-form input[type=submit]:hover {
+  border: 2px solid #0d52c3;
+  background: linear-gradient(180deg, #007ec4, #0d52c3);
+  color: #fff;
+}
