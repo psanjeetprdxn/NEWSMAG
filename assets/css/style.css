@@ -304,3 +304,31 @@ aside nav a:hover { color: #a3a4a7; }
   background: linear-gradient(180deg, #007ec4, #0d52c3);
   color: #fff;
 }
+
+/*main-content admin landing page syling starts here*/
+.redesign {
+  width: 85%;
+  padding-left: 30px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.redesign h2 {
+  margin-top: 19px;
+  color: #373737;
+  font-size: 31px;
+  font-weight: 900;
+}
+
+.redesign p {
+  margin-top: 12px;
+  color: #4d5354;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.redesign p span {
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 700;
+}
