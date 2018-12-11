@@ -21,12 +21,12 @@ if (isset($_POST['username'])) {
 
 //PASSWORD VALIDATION
 if (isset($_POST['password'])) {
-  if ($validation->validateUsername($_POST['username'])) {
-      $password = $_POST['password'];
-  } else {
-      header("Location:../admin/login.php?msg=passwordInvalid");
-      exit();
-  }
+    if ($validation->validatePassword($_POST['password'])) {
+        $password = $_POST['password'];
+    } else {
+        header("Location:../admin/login.php?msg=passwordInvalid");
+        exit();
+    }
 } else {
     header("Location:../admin/login.php?msg=passwordNotSet");
     exit();
