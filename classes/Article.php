@@ -104,4 +104,37 @@ class Article extends Connection
         }
         return $isDeleted;
     }
+
+    /*
+    *******************************************
+          DISPLAY ALL ARTICLES
+    *******************************************
+    */
+    public function display()
+    {
+        $articles = array();
+        $query = "SELECT * FROM article";
+        $article = $this->conn->query($query);
+        if ($article) {
+            $articles = $article->fetchAll();
+        }
+        return $articles;
+    }
+
+    /*
+    *******************************************
+          DISPLAY ARTICLES BY SECTION
+    *******************************************
+    */
+    public function displayBySection($section_name)
+    {
+        $articles = array();
+        $query = "SELECT * FROM article WHERE section_name = ?";
+        $article = $this->conn->prepare($query);
+        $article->execute([$section_name]);
+        if ($article) {
+            $articles = $article->fetchAll();
+        }
+        return $articles;
+    }
 }
