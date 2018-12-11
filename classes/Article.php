@@ -87,4 +87,21 @@ class Article extends Connection
         }
         return $isUpdated;
     }
+
+    /*
+    *******************************************
+          DELETE ARTICLES OF PARTICULAR ID
+    *******************************************
+    */
+    public function delete($article_id)
+    {
+        $isDeleted = false;
+        $query = "DELETE FROM article WHERE article_id = ?";
+        $delete = $this->conn->prepare($query);
+        $delete->execute([$article_id]);
+        if ($delete) {
+            $isDeleted = true;
+        }
+        return $isDeleted;
+    }
 }
