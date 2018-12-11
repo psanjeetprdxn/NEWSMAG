@@ -125,6 +125,24 @@ a {
   outline: none;
 }
 
+/* common classes */
+.manditory {
+  padding-left: 3px;
+  color: #f83f3c;
+}
+
+.form-error {
+  padding-top: 5px;
+  display: block;
+  color: #f83f3c;
+  cursor: auto;
+}
+
+.form-success {
+  padding-top: 5px;
+  color: #359b8e;
+}
+
 /* ADMIN HEADER */
 header {
   padding: 6px 0 6px;
