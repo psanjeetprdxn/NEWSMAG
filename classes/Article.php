@@ -28,4 +28,20 @@ class Article extends Connection
         }
         return $isAdded;
     }
+
+    /*
+    *******************************************
+          RETURNS ARTICLE OF PARTICULAR ID
+    *******************************************
+    */
+    public function getById($article_id) {
+        $article = "";
+        $query = "SELECT * FROM article WHERE article_id = ?";
+        $articles = $this->conn->prepare($query);
+        $articles->execute([$article_id]);
+        if ($articles->rowCount() > 0 ) {
+            $article = $articles->fetch();
+        }
+        return $article;
+    }
 }
