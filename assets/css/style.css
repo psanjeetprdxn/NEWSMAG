@@ -201,11 +201,10 @@ header {
 
 .admin-footer-wrapper p {
   color: #707276;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: .2px;
 }
-
 
 /* ASIDE MENU */
 .main-content { padding: 20px 0 20px; }
@@ -219,8 +218,10 @@ header {
   width: 14.37%;
   padding: 16px 0 16px 14px;
   border: 1px solid #d8d8d8;
+  display: inline-block;
   background-color: #eaeaea;
   border-radius: 5px;
+  vertical-align: top;
 }
 
 aside h2,
