@@ -91,7 +91,10 @@
                 <a href="#FIXME" class="uppercase transition" title="Featured">Featured</a>
               </li>
               <li class="search">
-                <a href="#FIXME" class="uppercase transition" title="Search">search</a>
+								<form action="#FIXME" method="post">
+									<input type="search" name="search">
+									<button title="Search">Search</button>
+								</form>
               </li>
             </ul>
           </nav>

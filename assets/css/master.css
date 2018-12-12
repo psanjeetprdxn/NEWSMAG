@@ -230,15 +230,18 @@ nav > ul > li:nth-child(2)::after {
   float: right;
 }
 
-.search a {
-  padding: 2px 12px;
-  margin-right: 0px;
-  display: inline-block;
-  font-size: 13px;
+.search { float: right; }
+
+.search button {
+  border: none;
+  background-color: transparent;
+  outline: none;
   text-indent: -9999px;
 }
 
-.search a::before {
+.search input { display: none; }
+
+.search button::before {
   content: "\f002";
   display: inline-block;
   float: right;
