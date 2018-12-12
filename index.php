@@ -14,6 +14,14 @@
 	<link rel="stylesheet" media="screen" href="assets/css/master.css">
 </head>
 <body>
+	<!-- creating object of article class -->
+	<?php
+  function __autoload($classname)
+  {
+      include "classes/$classname.php";
+  }
+  $article = new Article;
+	?>
 	<div class="container">
 		<!-- Start of the header -->
 		<header>
@@ -122,6 +130,120 @@
           </div>
         </section>
 				<!-- end of banner -->
+				<!-- start of article section -->
+				<div class="articles">
+	        <div class="wrapper">
+	          <!-- start of politics article -->
+	          <?php
+	          $politics = $article->displayBySection('politics');
+	          if ($politics) {
+	          ?>
+	          <div class="politics">
+	            <div class="section">
+	              <span class="capitalize">politics</span>
+	            </div>
+	            <ul>
+	              <?php
+	              foreach ($politics as $politic) {
+	              ?>
+	              <li>
+	                <article>
+	                  <div class="thumbnail">
+	                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($politic['thumbnail_image']); ?>" alt="<?php echo $politic['title']; ?>">
+	                  </div>
+	                  <h3>
+											<a href="#FIXME" title="<?php echo $politic['title']; ?>"><?php echo $politic['title']; ?></a>
+										</h3>
+	                  <div class="article-details">
+	                    <span class="date"><?php echo date('F j, Y', strtotime($politic['date'])); ?></span>
+	                    <span class="comments">0</span>
+	                  </div>
+	                  <p><?php echo $politic['description']; ?></p>
+	                </article>
+	              </li>
+	              <?php
+	              }
+	              ?>
+	            </ul>
+	          </div>
+	          <?php
+	          }
+	          ?>
+	          <!-- start of tech article -->
+	          <?php
+	          $tech = $article->displayBySection('tech');
+	          if ($tech) {
+	          ?>
+	          <div class="tech">
+	            <div class="section">
+	              <span class="capitalize">tech</span>
+	            </div>
+	            <ul>
+	              <?php
+	              foreach ($tech as $tec) {
+	              ?>
+	              <li>
+	                <article>
+	                  <div class="thumbnail">
+	                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($tec['thumbnail_image']); ?>" alt="<?php echo $tec['title']; ?>">
+	                  </div>
+	                  <h3>
+	                  	<a href="#FIXME" title="<?php echo $tec['title']; ?>"><?php echo $tec['title']; ?></a>
+	                  </h3>
+	                  <div class="article-details">
+	                    <span class="date"><?php echo date('F j, Y', strtotime($tec['date'])); ?></span>
+	                    <span class="comments">0</span>
+	                  </div>
+	                  <p><?php echo $tec['description']; ?></p>
+	                </article>
+	              </li>
+	              <?php
+	              }
+	              ?>
+	            </ul>
+	          </div>
+	          <?php
+	          }
+	          ?>
+	          <!-- start of world article -->
+	          <?php
+	          $world = $article->displayBySection('world');
+	          if ($world) {
+	          ?>
+	          <div class="world">
+	            <div class="section">
+	              <span class="capitalize">world</span>
+	            </div>
+	            <ul>
+	              <?php
+	              foreach ($world as $worlds) {
+	              ?>
+	              <li>
+	                <article>
+	                  <div class="thumbnail">
+	                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($worlds['thumbnail_image']); ?>" alt="<?php echo $worlds['title']; ?>">
+	                  </div>
+	                  <h3>
+	                  	<a href="#FIXME" title="<?php echo $worlds['title']; ?>"><?php echo $worlds['title']; ?></a>
+	                  </h3>
+	                  <div class="article-details">
+	                    <span class="date"><?php echo date('F j, Y', strtotime($worlds['date'])); ?></span>
+	                    <span class="comments">0</span>
+	                  </div>
+	                  <p><?php echo $worlds['description']; ?></p>
+	                </article>
+	              </li>
+	              <?php
+	              }
+	              ?>
+	            </ul>
+	          </div>
+	          <?php
+	          }
+	          ?>
+	        </div>
+				</div>
+				<!-- end fo article section -->
 		</main>
 		<!-- End of main -->
 	</div>
