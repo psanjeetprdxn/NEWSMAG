@@ -351,6 +351,80 @@ h2 {
   text-indent: 0;
 }
 
+/*ARTICLE SECTION*/
+
+.articles { padding: 25px 0 18px; }
+.articles .wrapper { text-align: left; }
+.section { border-bottom: 2px solid #fe3a20; }
+
+.section > span {
+  padding: 2px 12px 2px;
+  display: inline-block;
+  background-color: #fe3a20;
+  border-radius: 1px;
+  color: #fffCfc;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .1px;
+}
+
+.politics,
+.tech,
+.world {
+  width: 31.57%;
+  margin-right: calc(2.63% - 5px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.world { margin-right: 0; }
+.thumbnail { margin-top: 12px; }
+
+article h3 a {
+  margin-top: 13px;
+  display: inline-block;
+  color: #282828;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.article-details span {
+  color: #878787;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.article-details .date { margin-right: 4.22%; }
+.article-details { margin-top: 4px; }
+
+.article-details .date:before {
+  content: '\f017';
+  padding-right: 3px;
+  color: #878787;
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.article-details .comments::before {
+  content: '\f075';
+  padding-right: 3px;
+  color: #878787;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  font-size: 9px;
+}
+
+article p {
+  margin-top: 5px;
+  color: #5a5a5a;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 17px;
+  word-spacing: -1.5px;
+}
+
 /*media queries starts here*/
 @media only screen and (max-width: 1023px) {
   /*HEADER*/
