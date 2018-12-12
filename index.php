@@ -93,6 +93,35 @@
 		<!-- end of header -->
 		<!-- Start of main -->
 		<main>
+			<!-- start of banner -->
+			<section class="banner">
+          <div class="wrapper">
+            <div class="travel">
+              <div class="seq">
+                <a href="#FIXME" class="transition" title="Travel">travel</a>
+                <span>march 25, 2016 - by</span>
+                <a href="#FIXME" class="transition name" title="John Smith">john smith</a>
+              </div>
+              <h2>Changing Tastes: how society, evolution and history shapes our personality.</h2>
+            </div>
+            <div class="bot">
+              <span>today's hot topic</span>
+              <ul>
+                <li>As Party Splits Over Trump, Republican States May Tilt</li>
+                <li>Trump Faltering? Die-Hard Fans Refuse to but it</li>
+              </ul>
+            </div>
+            <ul class="dots">
+              <li>
+                <span class="transition">first</span>
+              </li>
+              <li>
+                <span class="transition">second</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+				<!-- end of banner -->
 		</main>
 		<!-- End of main -->
 	</div>
