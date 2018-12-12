@@ -365,3 +365,22 @@ h2 {
     float: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /*HEADER*/
+  .header-top { padding-bottom: 0; }
+
+  .header-top .social {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+
+  h1 {  margin: 0; }
+
+  /*banner*/
+  .seq { font-size: 10px; }
+  h2 { font-size: 16px; }
+  .header-mid .ad { width: 100%; }
+}
