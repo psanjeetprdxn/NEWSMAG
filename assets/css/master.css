@@ -16,12 +16,12 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
 figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  margin: 0;
   vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -46,9 +46,9 @@ button {
 }
 
 strong {
-  font-weight: bold;
   font-family: inherit;
   font-size: inherit;
+  font-weight: bold;
 }
 
 em { font-style: italic; }
@@ -74,8 +74,8 @@ sub { bottom: -.25em; }
 
 .cf:before,
 .cf:after {
-  display: table;
   content: " ";
+  display: table;
 }
 
 .cf:after { clear: both; }
@@ -85,8 +85,8 @@ sub { bottom: -.25em; }
 body { font-family: sans-serif; }
 
 .wrapper {
-  width: 59.1%;
   max-width: 1400px;
+  width: 59.1%;
   margin: 0 auto;
 }
 
@@ -150,8 +150,8 @@ a {
 }
 
 .social li a:before {
-  float: right;
   margin-left: 11px;
+  float: right;
   color: #fff;
   font-family: "Font Awesome 5 Brands";
   font-size: 10px;
@@ -210,10 +210,10 @@ nav > ul > li:nth-child(2):hover .drop-list {
 
 nav > ul > li:nth-child(2)::after {
   content: "\f078";
+  color: #fff;
   font-family: "Font Awesome 5 Free";
   font-size: 10px;
   font-weight: 900;
-  color: #fff;
   cursor: pointer;
 }
 
@@ -221,7 +221,7 @@ nav > ul > li:nth-child(2)::after {
   display: inline-block;
   color: #ffefee;
   font-size: 10px;
-  font-weight: 1000;
+  font-weight: 900;
   letter-spacing: .4px;
 }
 
@@ -251,11 +251,11 @@ nav > ul > li:nth-child(2)::after {
 /* BANNER */
 
 .banner {
-  position: relative;
   padding: 100px 0 30px;
+  position: relative;
   background: url("../images/banner.png");
-  background-position: center center;
   background-size: cover;
+  background-position: center center;
 }
 
 .travel { padding-left: 3.6%; }
@@ -274,10 +274,10 @@ nav > ul > li:nth-child(2)::after {
 
 .seq a:nth-child(1) {
   padding: 4px 5px 4px;
+  border-radius: 2px;
   margin-right: 20px;
   display: inline-block;
   background: #d93e37;
-  border-radius: 2px;
   color: #fff;
   font-size: 11px;
   font-weight: 600;
@@ -307,12 +307,12 @@ h2 {
 
 .bot li {
   padding: 4px 15px;
+  border-left: 4px solid #f44;
   margin-top: 3px;
   position: relative;
-  border-left: 4px solid #f44;
   color: #b7b9bb;
-  font-weight: 600;
   font-size: 11px;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -320,9 +320,9 @@ h2 {
   content: "01";
   position: absolute;
   left: -28px;
+  color: #a1a3a4;
   font-size: 11px;
   font-weight: 600;
-  color: #a1a3a4;
 }
 
 .bot li:nth-child(2)::before { content: "02"; }
@@ -359,9 +359,9 @@ h2 {
 
 .section > span {
   padding: 2px 12px 2px;
+  border-radius: 1px;
   display: inline-block;
   background-color: #fe3a20;
-  border-radius: 1px;
   color: #fffCfc;
   font-size: 13px;
   font-weight: bold;
@@ -412,8 +412,8 @@ article h3 a {
   padding-right: 3px;
   color: #878787;
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
   font-size: 9px;
+  font-weight: 400;
 }
 
 article p {
@@ -502,10 +502,10 @@ article p {
   .seq { font-size: 11px; }
 
   .seq a:nth-child(1) {
-    display: block;
     width: 50px;
-    font-size: 11px;
     margin-bottom: 4px;
+    display: block;
+    font-size: 11px;
   }
 
   h2 { font-size: 13px; }
