@@ -378,7 +378,7 @@ h2 {
 }
 
 .world { margin-right: 0; }
-.thumbnail { margin-top: 12px; }
+.thumbnail { margin-top: 11px; }
 
 article h3 a {
   margin-top: 13px;
@@ -421,7 +421,7 @@ article p {
   color: #5a5a5a;
   font-size: 12px;
   font-weight: bold;
-  line-height: 17px;
+  line-height: 16px;
   word-spacing: -1.5px;
 }
 
