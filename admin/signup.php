@@ -28,7 +28,7 @@
 		<!-- Start of the header -->
 		<header>
 			<?php
-			include '../partials/admin-header.php';
+			include_once '../partials/admin-header.php';
 			?>
 		</header>
 		<!-- end of header -->

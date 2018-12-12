@@ -28,7 +28,7 @@
 		<!-- Start of the header -->
 		<header>
 			<?php
-			include '../partials/admin-header.php';
+			include_once '../partials/admin-header.php';
 			?>
 		</header>
 		<!-- end of header -->
@@ -98,7 +98,7 @@
 		<!-- start of footer -->
 		<footer>
 			<?php
-			include '../partials/admin-footer.php';
+			include_once '../partials/admin-footer.php';
 			?>
 		</footer>
 		<!-- end of footer -->

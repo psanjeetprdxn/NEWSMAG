@@ -1,7 +1,7 @@
 <?php
 function __autoload($classname)
 {
-    include "../classes/$classname.php";
+    include_once "../classes/$classname.php";
 }
 //OBJECT OF VALIDATION CLASS
 $validation = new Validation;

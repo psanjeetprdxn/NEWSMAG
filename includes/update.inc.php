@@ -12,7 +12,7 @@ if (isset($_GET['article_id'])) {
 
 function __autoload($classname)
 {
-    include "../classes/$classname.php";
+    include_once "../classes/$classname.php";
 }
 
 // TITLE VALIDATION (checking empty value)

@@ -5,7 +5,7 @@ if (!isset($_SESSION)) {
 
 function __autoload($classname)
 {
-    include "../classes/$classname.php";
+    include_once "../classes/$classname.php";
 }
 
 // FOR RETAINING SIGNUP FORM DATA

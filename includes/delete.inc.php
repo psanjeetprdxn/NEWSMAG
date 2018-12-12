@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 
 function __autoload($classname)
 {
-    include "../classes/$classname.php";
+    include_once "../classes/$classname.php";
 }
 
 // DELETE

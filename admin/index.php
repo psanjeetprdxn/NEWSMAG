@@ -28,7 +28,7 @@
 		<!-- Start of the header -->
 		<header>
       <?php
-			include '../partials/admin-header.php';
+			include_once '../partials/admin-header.php';
 			?>
 		</header>
 		<!-- end of header -->
@@ -38,7 +38,7 @@
         <div class="wrapper">
           <aside>
             <?php
-            include '../partials/admin-aside.php';
+            include_once '../partials/admin-aside.php';
             ?>
           </aside>
           <div class="redesign">
@@ -53,7 +53,7 @@
 		<!-- start of footer -->
 		<footer>
       <?php
-			include '../partials/admin-footer.php';
+			include_once '../partials/admin-footer.php';
 			?>
 		</footer>
 		<!-- end of footer -->

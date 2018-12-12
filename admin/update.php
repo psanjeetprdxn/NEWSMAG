@@ -28,7 +28,7 @@
 		<!-- Start of the header -->
 		<header>
       <?php
-			include '../partials/admin-header.php';
+			include_once '../partials/admin-header.php';
 			?>
 		</header>
 		<!-- end of header -->
@@ -47,7 +47,7 @@
         <div class="wrapper">
           <aside>
             <?php
-            include '../partials/admin-aside.php';
+            include_once '../partials/admin-aside.php';
             ?>
           </aside>
           <div class="add-article">
