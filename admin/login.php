@@ -80,10 +80,10 @@
                 <?php
                 if (isset($_GET['msg'])) {
                   	if ($_GET['msg'] == 'loginFail') {
-                    	echo 'Username or password is incorrect';
+                    		echo 'Username or password is incorrect';
                   	}
                   	if ($_GET['msg'] == 'notLogin') {
-                    	echo 'You must login to use that page';
+                    		echo 'You must login to use that page';
                   	}
                 }
                 ?>

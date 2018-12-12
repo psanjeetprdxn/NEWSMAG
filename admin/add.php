@@ -20,8 +20,8 @@
   }
   // checks if session exists
   if (!isset($_SESSION['user_id'])) {
-    header ("Location: login.php?msg=notLogin");
-    exit();
+    	header ("Location: login.php?msg=notLogin");
+    	exit();
   }
   ?>
 	<div class="container">

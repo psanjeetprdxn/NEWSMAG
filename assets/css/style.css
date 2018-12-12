@@ -16,12 +16,12 @@
    tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
    figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
    time, mark, audio, video {
-    margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    margin: 0;
     vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
    }
 
    /* HTML5 display-role reset for older browsers */
@@ -46,9 +46,9 @@
    }
 
    strong {
-    font-weight: bold;
     font-family: inherit;
     font-size: inherit;
+    font-weight: bold;
    }
 
    em { font-style: italic; }
@@ -75,8 +75,8 @@
 
 .cf:before,
 .cf:after {
-  display: table;
   content: " ";
+  display: table;
 }
 
 .cf:after { clear: both; }
@@ -96,9 +96,9 @@
 .container { width: 100%; }
 
 .wrapper {
+  max-width: 1500px;
   width: 71.85%;
   margin: 0 auto;
-  max-width: 1500px;
 }
 
  .fas { padding-right: 5px; }
@@ -170,8 +170,8 @@ header {
 
 .admin-header-wrapper li a {
   padding: 6px 13px 6px;
-  background-color: #f8f8f8;
   border-radius: 4px;
+  background-color: #f8f8f8;
   color: #5b5e64;
   font-size: 16px;
   font-weight: 500;
@@ -188,21 +188,21 @@ header {
 .profile-name:before {
   content: '\f007';
   padding-right: 5px;
+  vertical-align: top;
   color: #393939;
   font-family: "Font Awesome 5 Free";
   font-size: 14px;
   font-weight: 900;
-  vertical-align: top;
 }
 
 .profile-name:after {
   content: '\f0dd';
   padding: 0 5px 0;
+  vertical-align: top;
   color: #393939;
   font-family: "Font Awesome 5 Free";
   font-size: 14px;
   font-weight: 900;
-  vertical-align: top;
 }
 
 .admin-header-wrapper li:hover > .profile-name:after,
@@ -233,10 +233,10 @@ header {
   width: 14.37%;
   padding: 16px 0 16px 14px;
   border: 1px solid #d8d8d8;
-  display: inline-block;
-  background-color: #eaeaea;
   border-radius: 5px;
+  display: inline-block;
   vertical-align: top;
+  background-color: #eaeaea;
 }
 
 aside h2,
@@ -260,8 +260,8 @@ aside nav a:hover { color: #a3a4a7; }
   width: 356px;
   padding: 31px 27px 24px;
   border: 2px solid #eaeaea;
-  margin: 0 auto;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .register-form h2 {
@@ -274,8 +274,8 @@ aside nav a:hover { color: #a3a4a7; }
   width: 100%;
   padding: 8px 0 8px 8px;
   border: 2px solid #e5e5e5;
-  margin-top: 14px;
   border-radius: 4px;
+  margin-top: 14px;
   color: #a5abae;
   font-size: 16px;
   outline: none;
@@ -290,8 +290,8 @@ aside nav a:hover { color: #a3a4a7; }
 .form-button a {
   padding: 4px 10px 4px;
   border: 2px solid #ececec;
-  background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   border-radius: 4px;
+  background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   color: #6e6e6e;
   font-size: 14px;
   font-weight: 500;
@@ -345,8 +345,8 @@ aside nav a:hover { color: #a3a4a7; }
 .add-article > ul a {
   padding: 5px;
   border: 1px solid transparent;
-  border-bottom-color: #ddd;
   color: #5ea89b;
+  border-bottom-color: #ddd;
 }
 
 .add-article > ul a:hover,
@@ -403,8 +403,8 @@ aside nav a:hover { color: #a3a4a7; }
   width: 100%;
   padding: 4px 10px 4px;
   border: 2px solid #ececec;
-  background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   border-radius: 4px;
+  background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   color: #6e6e6e;
   font-size: 14px;
   font-weight: 500;
@@ -444,9 +444,9 @@ aside nav a:hover { color: #a3a4a7; }
   width: 15%;
   padding: 8px 8px;
   border: 2px solid #ececec;
+  border-radius: 4px;
   background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   color: #6e6e6e;
-  border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
   outline: none;
@@ -505,9 +505,9 @@ aside nav a:hover { color: #a3a4a7; }
 .articles-details .delete::before {
   content: '\f00c';
   padding: 9px 13px;
+  border-radius: 4px;
   float: right;
   background-color: #f6f6f6;
-  border-radius: 4px;
   color: #3f3f3f;
   font-family: "Font Awesome 5 Free";
   font-size: 16px;
