@@ -17,11 +17,11 @@ function __autoload($classname)
 if (isset($_GET['article_id'])) {
     $article = new Article;
     if ($article->delete($_GET['article_id'])) {
-      header("Location: ../admin/browse.php?msg=deleted");
-      exit();
+        header("Location: ../admin/browse.php?msg=deleted");
+        exit();
   } else {
-      header("Location: ../admin/browse.php?msg=noeDeleted");
-      exit();
+        header("Location: ../admin/browse.php?msg=noeDeleted");
+        exit();
   }
 } else {
     header("Location: ../admin/browse.php");
