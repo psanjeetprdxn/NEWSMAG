@@ -103,147 +103,147 @@
 		<main>
 			<!-- start of banner -->
 			<section class="banner">
-          <div class="wrapper">
-            <div class="travel">
-              <div class="seq">
-                <a href="#FIXME" class="transition" title="Travel">travel</a>
-                <span>march 25, 2016 - by</span>
-                <a href="#FIXME" class="transition name" title="John Smith">john smith</a>
-              </div>
-              <h2>Changing Tastes: how society, evolution and history shapes our personality.</h2>
+        <div class="wrapper">
+          <div class="travel">
+            <div class="seq">
+              <a href="#FIXME" class="transition" title="Travel">travel</a>
+              <span>march 25, 2016 - by</span>
+              <a href="#FIXME" class="transition name" title="John Smith">john smith</a>
             </div>
-            <div class="bot">
-              <span>today's hot topic</span>
-              <ul>
-                <li>As Party Splits Over Trump, Republican States May Tilt</li>
-                <li>Trump Faltering? Die-Hard Fans Refuse to but it</li>
-              </ul>
-            </div>
-            <ul class="dots">
-              <li>
-                <span class="transition">first</span>
-              </li>
-              <li>
-                <span class="transition">second</span>
-              </li>
+            <h2>Changing Tastes: how society, evolution and history shapes our personality.</h2>
+          </div>
+          <div class="bot">
+            <span>today's hot topic</span>
+            <ul>
+              <li>As Party Splits Over Trump, Republican States May Tilt</li>
+              <li>Trump Faltering? Die-Hard Fans Refuse to but it</li>
             </ul>
           </div>
-        </section>
-				<!-- end of banner -->
-				<!-- start of article section -->
-				<div class="articles">
-	        <div class="wrapper">
-	          <!-- start of politics article -->
-	          <?php
-	          $politics = $article->displayBySection('politics');
-	          if ($politics) {
-	          ?>
-	          <div class="politics">
-	            <div class="section">
-	              <span class="capitalize">politics</span>
-	            </div>
-	            <ul>
-	              <?php
-	              foreach ($politics as $politic) {
-	              ?>
-	              <li>
-	                <article>
-	                  <div class="thumbnail">
-	                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($politic['thumbnail_image']); ?>" alt="<?php echo $politic['title']; ?>">
-	                  </div>
-	                  <h3>
-											<a href="#FIXME" title="<?php echo $politic['title']; ?>"><?php echo $politic['title']; ?></a>
-										</h3>
-	                  <div class="article-details">
-	                    <span class="date"><?php echo date('F j, Y', strtotime($politic['date'])); ?></span>
-	                    <span class="comments">0</span>
-	                  </div>
-	                  <p><?php echo $politic['description']; ?></p>
-	                </article>
-	              </li>
-	              <?php
-	              }
-	              ?>
-	            </ul>
-	          </div>
-	          <?php
-	          }
-	          ?>
-	          <!-- start of tech article -->
-	          <?php
-	          $tech = $article->displayBySection('tech');
-	          if ($tech) {
-	          ?>
-	          <div class="tech">
-	            <div class="section">
-	              <span class="capitalize">tech</span>
-	            </div>
-	            <ul>
-	              <?php
-	              foreach ($tech as $tec) {
-	              ?>
-	              <li>
-	                <article>
-	                  <div class="thumbnail">
-	                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($tec['thumbnail_image']); ?>" alt="<?php echo $tec['title']; ?>">
-	                  </div>
-	                  <h3>
-	                  	<a href="#FIXME" title="<?php echo $tec['title']; ?>"><?php echo $tec['title']; ?></a>
-	                  </h3>
-	                  <div class="article-details">
-	                    <span class="date"><?php echo date('F j, Y', strtotime($tec['date'])); ?></span>
-	                    <span class="comments">0</span>
-	                  </div>
-	                  <p><?php echo $tec['description']; ?></p>
-	                </article>
-	              </li>
-	              <?php
-	              }
-	              ?>
-	            </ul>
-	          </div>
-	          <?php
-	          }
-	          ?>
-	          <!-- start of world article -->
-	          <?php
-	          $world = $article->displayBySection('world');
-	          if ($world) {
-	          ?>
-	          <div class="world">
-	            <div class="section">
-	              <span class="capitalize">world</span>
-	            </div>
-	            <ul>
-	              <?php
-	              foreach ($world as $worlds) {
-	              ?>
-	              <li>
-	                <article>
-	                  <div class="thumbnail">
-	                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($worlds['thumbnail_image']); ?>" alt="<?php echo $worlds['title']; ?>">
-	                  </div>
-	                  <h3>
-	                  	<a href="#FIXME" title="<?php echo $worlds['title']; ?>"><?php echo $worlds['title']; ?></a>
-	                  </h3>
-	                  <div class="article-details">
-	                    <span class="date"><?php echo date('F j, Y', strtotime($worlds['date'])); ?></span>
-	                    <span class="comments">0</span>
-	                  </div>
-	                  <p><?php echo $worlds['description']; ?></p>
-	                </article>
-	              </li>
-	              <?php
-	              }
-	              ?>
-	            </ul>
-	          </div>
-	          <?php
-	          }
-	          ?>
-	        </div>
-				</div>
-				<!-- end fo article section -->
+          <ul class="dots">
+            <li>
+              <span class="transition">first</span>
+            </li>
+            <li>
+              <span class="transition">second</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+			<!-- end of banner -->
+			<!-- start of article section -->
+			<div class="articles">
+        <div class="wrapper">
+          <!-- start of politics article -->
+          <?php
+          $politics = $article->displayBySection('politics');
+          if ($politics) {
+          ?>
+          <div class="politics">
+            <div class="section">
+              <span class="capitalize">politics</span>
+            </div>
+            <ul>
+              <?php
+              foreach ($politics as $politic) {
+              ?>
+              <li>
+                <article>
+                  <div class="thumbnail">
+                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($politic['thumbnail_image']); ?>" alt="<?php echo $politic['title']; ?>">
+                  </div>
+                  <h3>
+										<a href="#FIXME" title="<?php echo $politic['title']; ?>"><?php echo $politic['title']; ?></a>
+									</h3>
+                  <div class="article-details">
+                    <span class="date"><?php echo date('F j, Y', strtotime($politic['date'])); ?></span>
+                    <span class="comments">0</span>
+                  </div>
+                  <p><?php echo $politic['description']; ?></p>
+                </article>
+              </li>
+              <?php
+              }
+              ?>
+            </ul>
+          </div>
+          <?php
+          }
+          ?>
+          <!-- start of tech article -->
+          <?php
+          $tech = $article->displayBySection('tech');
+          if ($tech) {
+          ?>
+          <div class="tech">
+            <div class="section">
+              <span class="capitalize">tech</span>
+            </div>
+            <ul>
+              <?php
+              foreach ($tech as $tec) {
+              ?>
+              <li>
+                <article>
+                  <div class="thumbnail">
+                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($tec['thumbnail_image']); ?>" alt="<?php echo $tec['title']; ?>">
+                  </div>
+                  <h3>
+                  	<a href="#FIXME" title="<?php echo $tec['title']; ?>"><?php echo $tec['title']; ?></a>
+                  </h3>
+                  <div class="article-details">
+                    <span class="date"><?php echo date('F j, Y', strtotime($tec['date'])); ?></span>
+                    <span class="comments">0</span>
+                  </div>
+                  <p><?php echo $tec['description']; ?></p>
+                </article>
+              </li>
+              <?php
+              }
+              ?>
+            </ul>
+          </div>
+          <?php
+          }
+          ?>
+          <!-- start of world article -->
+          <?php
+          $world = $article->displayBySection('world');
+          if ($world) {
+          ?>
+          <div class="world">
+            <div class="section">
+              <span class="capitalize">world</span>
+            </div>
+            <ul>
+              <?php
+              foreach ($world as $worlds) {
+              ?>
+              <li>
+                <article>
+                  <div class="thumbnail">
+                    <img src="<?php echo 'data:image/jpeg;base64,'.base64_encode($worlds['thumbnail_image']); ?>" alt="<?php echo $worlds['title']; ?>">
+                  </div>
+                  <h3>
+                  	<a href="#FIXME" title="<?php echo $worlds['title']; ?>"><?php echo $worlds['title']; ?></a>
+                  </h3>
+                  <div class="article-details">
+                    <span class="date"><?php echo date('F j, Y', strtotime($worlds['date'])); ?></span>
+                    <span class="comments">0</span>
+                  </div>
+                  <p><?php echo $worlds['description']; ?></p>
+                </article>
+              </li>
+              <?php
+              }
+              ?>
+            </ul>
+          </div>
+          <?php
+          }
+          ?>
+        </div>
+			</div>
+			<!-- end fo article section -->
 		</main>
 		<!-- End of main -->
 	</div>
