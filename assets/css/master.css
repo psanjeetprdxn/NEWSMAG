@@ -286,9 +286,9 @@ nav > ul > li:nth-child(2)::after {
 
 h2 {
   width: 80%;
-  margin-top: 25px;
+  margin-top: 17px;
   color: #fefffe;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 700;
 }
 
@@ -303,7 +303,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.bot ul { margin: 20px 0 0 3.4%; }
+.bot ul { margin: 14px 0 0 3.4%; }
 
 .bot li {
   padding: 4px 15px;
