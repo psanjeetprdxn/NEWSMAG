@@ -417,6 +417,7 @@ article h3 a {
 }
 
 article p {
+  padding-bottom: 14px;
   margin-top: 5px;
   color: #5a5a5a;
   font-size: 12px;
