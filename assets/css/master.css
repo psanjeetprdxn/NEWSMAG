@@ -457,6 +457,15 @@ article p {
   .seq { font-size: 10px; }
   h2 { font-size: 16px; }
   .header-mid .ad { width: 100%; }
+
+  /*ARTICLE SECTION*/
+  .politics,
+  .tech,
+  .world {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
