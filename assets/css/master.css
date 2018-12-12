@@ -350,3 +350,18 @@ h2 {
   font-weight: 900;
   text-indent: 0;
 }
+
+/*media queries starts here*/
+@media only screen and (max-width: 1023px) {
+  /*HEADER*/
+  .header-mid .wrapper { text-align: center; }
+  .h1 { display: block; }
+
+  .header-mid .ad {
+    width: 64.45%;
+    min-width: 0;
+    margin: 10px auto 0;
+    display: block;
+    float: none;
+  }
+}
