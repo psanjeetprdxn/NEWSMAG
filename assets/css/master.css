@@ -81,7 +81,7 @@ sub { bottom: -.25em; }
 .cf:after { clear: both; }
 .cf { *zoom: 1; }
 
-/* common styling */
+/* COMMON STYLING */
 body { font-family: sans-serif; }
 
 .wrapper {
@@ -124,4 +124,126 @@ a {
   display: inline-block;
   text-decoration: none;
   outline: none;
+}
+
+/*HEADER*/
+
+/* header top */
+
+.header-top {
+  padding: 6px 0 2px;
+  background: #333;
+}
+
+.social li { display: inline-block; }
+
+.header-top ul { padding-right: 5px; }
+
+.social a {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+.social {
+  display: inline-block;
+  float: right;
+}
+
+.social li a:before {
+  float: right;
+  margin-left: 11px;
+  color: #fff;
+  font-family: "Font Awesome 5 Brands";
+  font-size: 10px;
+  text-indent: 0;
+}
+
+.social li:nth-child(1) a::before { content: "\f39e"; }
+.social li:nth-child(2) a::before { content: "\f16d"; }
+.social li:nth-child(3) a::before { content: "\f099"; }
+.social li:nth-child(4) a::before { content: "\f231"; }
+.social li:nth-child(5) a::before { content: "\f0e1"; }
+.social li:nth-child(6) a::before { content: "\f167"; }
+
+/* .header-mid  */
+
+.header-mid { padding: 10px 0 9px; }
+h1 img { float: right; }
+h1 a { text-indent: -9999px; }
+h1 { margin-top: 9px; }
+h1,
+.ad { display: inline-block; }
+
+.ad {
+  width: 64.45%;
+  min-width: 450px;
+  float: right;
+}
+
+/* header bot */
+
+.header-bot {
+  padding: 12px 0px;
+  background: #ff3832;
+}
+
+nav > ul > li {
+  margin-right: 3.3%;
+  display: inline-block;
+  position: relative;
+}
+
+.drop-list { display: none; }
+
+.drop-list li {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+nav > ul > li:nth-child(2):hover .drop-list {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  background: #eb3;
+  text-align: center;
+}
+
+nav > ul > li:nth-child(2)::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  font-weight: 900;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-bot a {
+  display: inline-block;
+  color: #ffefee;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: .4px;
+}
+
+.header-bot .search {
+  margin: 0;
+  float: right;
+}
+
+.search a {
+  padding: 2px 12px;
+  margin-right: 0px;
+  display: inline-block;
+  font-size: 13px;
+  text-indent: -9999px;
+}
+
+.search a::before {
+  content: "\f002";
+  display: inline-block;
+  float: right;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-indent: 0;
 }
