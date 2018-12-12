@@ -304,7 +304,6 @@ aside nav a:hover { color: #a3a4a7; }
 .form-button input[type=submit]:hover,
 .form-button a:hover {
   border: 2px solid #0d52c3;
-  background: linear-gradient(180deg, #007ec4, #0d52c3);
   background: -webkit-gradient(linear, left top, left bottom, from(#007ec4), to(#0d52c3));
   background: -webkit-linear-gradient(top, #007ec4, #0d52c3);
   background: -o-linear-gradient(top, #007ec4, #0d52c3);
@@ -412,6 +411,10 @@ aside nav a:hover { color: #a3a4a7; }
   border: 2px solid #ececec;
   border-radius: 4px;
   background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e6e6e6));
+  background: -webkit-linear-gradient(top, #f8f8f8, #e6e6e6);
+  background: -o-linear-gradient(top, #f8f8f8, #e6e6e6);
+  background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   color: #6e6e6e;
   font-size: 14px;
   font-weight: 500;
@@ -420,6 +423,9 @@ aside nav a:hover { color: #a3a4a7; }
 
 .article-form input[type=submit]:hover {
   border: 2px solid #0d52c3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#007ec4), to(#0d52c3));
+  background: -webkit-linear-gradient(top, #007ec4, #0d52c3);
+  background: -o-linear-gradient(top, #007ec4, #0d52c3);
   background: linear-gradient(180deg, #007ec4, #0d52c3);
   color: #fff;
 }
@@ -452,6 +458,9 @@ aside nav a:hover { color: #a3a4a7; }
   padding: 8px 8px;
   border: 2px solid #ececec;
   border-radius: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e6e6e6));
+  background: -webkit-linear-gradient(top, #f8f8f8, #e6e6e6);
+  background: -o-linear-gradient(top, #f8f8f8, #e6e6e6);
   background: linear-gradient(180deg, #f8f8f8, #e6e6e6);
   color: #6e6e6e;
   font-size: 14px;
@@ -461,6 +470,9 @@ aside nav a:hover { color: #a3a4a7; }
 
 .search-form input[type=submit]:hover {
   border: 2px solid #0d52c3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#007ec4), to(#0d52c3));
+  background: -webkit-linear-gradient(top, #007ec4, #0d52c3);
+  background: -o-linear-gradient(top, #007ec4, #0d52c3);
   background: linear-gradient(180deg, #007ec4, #0d52c3);
   color: #fff;
 }
